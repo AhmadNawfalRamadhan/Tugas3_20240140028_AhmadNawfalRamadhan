@@ -15,10 +15,7 @@ setInterval(updateClock,1000);
 
 updateClock();
 
-function tampil(){
-    alert("ini adalah button")
-}
 
 function show(){
-    alert("Nama saya Ahmad Nawfal Ramadhan NIM 20240140028 Kelas A, saya adalah seorang mahasiswa yang sedang belajar pemrograman web dasar")
+    alert("Nama saya Ahmad Nawfal Ramadhan NIM 20240140028 Kelas A, saya adalah seorang mahasiswa yang sedang belajar pemrograman web ")
 }
