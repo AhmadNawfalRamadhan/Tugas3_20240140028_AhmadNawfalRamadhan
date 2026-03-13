@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Praktikum 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
+<style>
+        body{
+            background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8), 
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.8)
+            ),  url("faiz.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial;
+            min-height: 100vh;
+        }
+
+        .content{
+            text-align: center;
+            margin: 30px;
+        }
+
+        .deskripsi{
+            font-size: 18px;
+        }
+    </style>
+
+<script>
+function mulai(){
+
+    document.getElementById("startScreen").style.display = "none";
+
+    let audio = document.getElementById("suara");
+    audio.volume = 0.4;
+    audio.play();
+
+    document.body.style.overflow = "auto";
+}
+</script>
 <body>
+<div id="startScreen">
+    <h1 class="logo">SMART BRAIN SYSTEM</h1>
+        <div id="clock">00:00:00</div>
+    <p class="subtitle">Kamen Rider Faiz Interface</p>
+    <button class="startBtn" onclick="mulai()">START</button>
+</div>
+<div id="content" style="display:none;"></div>
+
+    <h1 style="text-align: center;
+               color: red;
+               text-shadow: 3px 3px 5px black;
+               font-family: 'Orbitron', sans-serif;"
+               >Kamen Rider Faiz/555</h1>
     
+    <div class="gambar">
+    <div id ="g1">   
+    <img style="border: 5px solid red; 
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px black;
+                display: block;
+                margin: auto;" 
+                src="kamen-rider555-555.gif" width="450" height="250">
+    </div>            
+
+    <div class="textbox">           
+    <h2 style="color: red;text-align: center; text-shadow: 3px 3px 5px black;font-size: xx-large;">Diskripsi singkat</h2>
+
+    <div class="deskripsi">
+    <p style="text-align: center;"> Kamen Rider Faiz (仮面ライダーファイズ, Kamen Raidā Faizu, "Masked Rider Faiz") or</p>
+    <p style="text-align: center;"> SB-555 Faiz (SB standing for Smart Brain) is the main protagonist of Kamen Rider 555</p>
+    </div>
+
+    <div class="fiture">
+    <p> Weapon list: </p>
+    <ul>
+        <li>SB-555BNC Faiz shot</li>
+        <li>SB-555L Faiz Pointer</li>
+        <li>SB-555H Faiz Edge</li>
+        <li>SB-555V Auto Vajin</li>
+    </ul>
+    <div class="videoButton">
+    <a href="https://www.youtube.com/watch?v=uhLkCtnsF_E" target="_blank">
+        <button class="ytButton">Henshin And Finisher</button>
+    </a>
+</div>
+
+    </div>
+    </div>
+<div style="text-align: center;">
+<button class="btnFaiz" onclick="tampil()"></button>
+<button class="btnFaiz" onclick="show()">Profile Creator</button>
+</div>
+
+    <script>
+        alert("Selamat datang di website Kamen Rider Faiz/555 by Ahmad Nawfal Ramadhan");
+    </script>
+
+    <audio id="suara">
+    <source src="PhoneOpen.mp3" type="audio/mpeg">
+</audio>
+
+    <script src ="script.js"></script>
 </body>
 </html>
